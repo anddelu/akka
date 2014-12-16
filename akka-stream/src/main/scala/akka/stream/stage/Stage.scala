@@ -367,7 +367,7 @@ sealed trait Directive
 sealed trait UpstreamDirective extends Directive
 sealed trait DownstreamDirective extends Directive
 sealed trait TerminationDirective extends Directive
-final class FreeDirective extends UpstreamDirective with DownstreamDirective with TerminationDirective
+final class FreeDirective private[akka] () extends UpstreamDirective with DownstreamDirective with TerminationDirective
 
 /**
  * Passed to the callback methods of [[PushPullStage]] and [[StatefulStage]].
