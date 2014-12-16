@@ -12,7 +12,7 @@ import akka.event.LoggingAdapter
 import akka.util.ByteString
 import akka.io.Inet
 import akka.stream.FlowMaterializer
-import akka.stream.io.StreamTcp
+import akka.stream.scaladsl.StreamTcp
 import akka.stream.scaladsl._
 import akka.http.engine.client.{ HttpClient, ClientConnectionSettings }
 import akka.http.engine.server.{ HttpServer, ServerSettings }
